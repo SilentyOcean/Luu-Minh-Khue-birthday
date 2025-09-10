@@ -1,21 +1,72 @@
 @font-face{
     font-family: 'lucySaid';
-    src: url('Lucy Said Ok Personal Use.ttf');
+    src: url('Child\ Hood.otf');
 }
+
+#leftSide{
+    /*  */
+    margin: 0;
+   
+}
+
+#rightSide{
+    /*  */
+    margin: 0;
+}
+
+
+
+.random-img {
+      position: absolute;
+      max-width: 100px;
+      max-height: 100px;
+      user-select: none;
+      pointer-events: none;
+    }
 
 body{
     display: flex;
     flex-direction: column;
     background-color: #EBDED4;
+    margin: 0;
+    padding: 0;
+    font-family: 'lucySaid';
+
 }
+
+.hanging-sign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+img {
+  display: block;        /* removes inline spacing */
+  margin: 0;             /* no default margin */
+  padding: 0;            /* no default padding */
+  border: none;          /* no border showing */
+  background: none;      /* removes any background */
+}
+
+.balloon .left{
+    transform: rotate(90deg);
+}
+
 
 .main{
     display: flex;
     margin: 30px;
     flex-direction: column;
-    border-style: solid;
+    /*  */
     justify-content: center;
 
+}
+
+.balloon{
+    width: 200px;
+    height: 300px;
 }
 
 .mtop{
@@ -23,7 +74,7 @@ body{
     justify-content: center;
     font-size: 200px;
     font-family: 'lucySaid';
-    border-style: solid;
+    /*  */
 }
 
 .mbody{
@@ -32,24 +83,24 @@ body{
     justify-content: center;
     align-items: center;
     padding: 100px;
-    font-size: 100px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
-    border-style: solid;
+    
 }
 
 .mbottom{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-style: solid;
+    
     align-items: center;
     
 }
 
 .mbottom p{
-    border-style: solid;
+    
     margin: 30px;
 }
 
@@ -57,6 +108,10 @@ body{
 
 #container{
 
-    border-style: solid;
+    
 }
 
+
+#birthday-sign{
+    width: 800px;
+}

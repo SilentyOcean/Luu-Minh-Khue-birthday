@@ -6,6 +6,10 @@
   const layer = new Konva.Layer();
   stage.add(layer);
 
+  let htmlConfetti = document.getElementById("htmlConfetti");
+  let htmlGift = document.getElementById("htmlGift");
+  let htmlGiftsmall = document.getElementById("htmlGiftSmall")
+
 
 
 
@@ -24,6 +28,9 @@ class Cake {
     if(this.candlesBlown == 18){
       console.log("Confetti!");
       coolConfetti();
+      htmlConfetti.innerHTML = "Confetti!";
+      htmlGift.innerHTML = "...and gift: https://product.hstatic.net/200000756047/product/upload_4a592173b4be493a92b1a3a80227ff0e.jpg";
+      htmlGiftsmall.innerHTML="nó chưa giao";
     }
     
   }
@@ -95,7 +102,7 @@ class Cake {
   midElip(color = "yellow") {
     let midElipse = new Konva.Ellipse({
       x: this.x,
-      y: this.y + this.radX / 2,
+      y: this.y + this.radX / 4,
       radiusX: this.radX,
       radiusY: this.radY,
       fill: color,
@@ -161,7 +168,7 @@ class Cake {
     let topRect = new Konva.Rect({
       x: this.x - this.radX,
       y: this.y - 2,
-      height: this.radX / 2,
+      height: this.radX / 4,
       width: this.radX * 2,
       fill: color,
       strokeWidth: 4,
@@ -185,15 +192,47 @@ class Cake {
   }
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
  
 
 
   function main(){
+
+    function generateRandomImage(imgPath) {
+      const img = document.createElement("img");
+      img.src = imgPath;
+      img.classList.add("random-img");
+
+      // random position inside viewport
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 100);
+
+      const rotation = Math.random() * 90 - 45;
+
+      img.style.left = `${x}px`;
+      img.style.top = `${y}px`;
+      img.style.transform = `rotate(${rotation}deg)`;
+
+      document.body.appendChild(img);
+    }
+
+
     let cake1 = new Cake(stage.width()/2, stage.height()/2, 2);
     cake1.cakeGen();
+
+   
+
     
+
+    // coolConfetti();
+
+    
+
+   
+
   };
 
   main();
