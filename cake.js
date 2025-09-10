@@ -81,6 +81,15 @@ class Cake {
       console.log(this.candlesBlown);
       this.blownCheck();
     });
+
+    candle.on("click", () => {
+      candle.destroy();
+      flame.destroy();
+      layer.draw();
+      this.candlesBlown++;
+      console.log(this.candlesBlown);
+      this.blownCheck();
+    });
     
     layer.add(candle);
     layer.add(flame);
