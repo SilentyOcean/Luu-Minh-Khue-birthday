@@ -190,11 +190,11 @@ class Cake {
   }
 
   cakeGen() {
-    this.botElip("brown");
-    this.rectangle("brown");
-    this.midElip("white");
-    this.topRectangle("white");
-    this.topElip("white");
+    this.botElip("rgb(144,59,13)");
+    this.rectangle("rgb(144,59,13)");
+    this.midElip("rgb(253,251,212)");
+    this.topRectangle("rgb(253,251,212)");
+    this.topElip("rgb(253,251,212)");
     this.leftLine();
     this.rightLine();
     
