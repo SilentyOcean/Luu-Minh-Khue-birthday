@@ -10,6 +10,7 @@
   let htmlGift = document.getElementById("htmlGift");
   let htmlGiftsmall = document.getElementById("htmlGiftSmall")
   let htmlsurprised = document.getElementById("surprised");
+  let htmlLetter = document.getElementById("letter");
 
 
 
@@ -33,6 +34,7 @@ class Cake {
       htmlGift.innerHTML = "...and gift: https://product.hstatic.net/200000756047/product/upload_4a592173b4be493a92b1a3a80227ff0e.jpg";
       htmlGiftsmall.innerHTML="nó chưa giao";
       htmlsurprised.innerHTML="click hết mấy cái nến for big surprise(kéo xuống)";
+      htmlLetter.innerHTML="Chúc bà sinh nhật 18 tuổi! Bà là người nice nhất tôi từng biết"
     }
     
   }
