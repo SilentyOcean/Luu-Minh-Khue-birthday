@@ -53,8 +53,8 @@ class Cake {
     let candle = new Konva.Rect({
       x: randX - 3,
       y: randY - 20,
-      width: 6,
-      height: 20,
+      width: 9,
+      height: 30,
       fill: "white",
       stroke: "black",
       strokeWidth: 2,
@@ -64,8 +64,8 @@ class Cake {
     let flame = new Konva.Ellipse({
       x: randX,
       y: randY - 28,
-      radiusX: 4,
-      radiusY: 6,
+      radiusX: 6,
+      radiusY: 9,
       fill: "orange",
       stroke: "red",
       strokeWidth: 4,
