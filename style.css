@@ -111,6 +111,21 @@ img {
     
 }
 
+#blow{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 11px;
+}
+
+.bottom-blow{
+    display: flex;
+    justify-content: center;
+}
+
 
 #birthday-sign{
     width: 1200px;

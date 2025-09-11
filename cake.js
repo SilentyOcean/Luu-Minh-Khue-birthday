@@ -11,6 +11,7 @@
   let htmlGiftsmall = document.getElementById("htmlGiftSmall")
   let htmlsurprised = document.getElementById("surprised");
   let htmlLetter = document.getElementById("letter");
+  let htmlButton = document.getElementById("blow")
 
 
 
@@ -236,6 +237,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let cake1 = new Cake(stage.width()/2, stage.height()/2, 2);
     cake1.cakeGen();
 
+    htmlButton.addEventListener("click", function(){
+      cake1.candlesBlown = 18;
+      cake1.blownCheck();
+    });
    
 
     
